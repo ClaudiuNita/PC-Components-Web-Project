@@ -1,0 +1,23 @@
+<div *ngIf="componenta">
+    
+    <h2> Detalii componenta [{{componenta.nume}}]: </h2>
+
+    <div>
+        <label>Id produs:</label> {{componenta.id}}
+        <br>
+        <label for="componenta-nume">Denumire:</label>
+        <input id="componenta-nume" [(ngModel)]="componenta.nume" placeholder="nume">
+        <br>
+        <label> Producator:</label>
+        <input [(ngModel)]="componenta.producator" placeholder="dwad">
+        <br>
+        <label>Pret Euro:</label>
+        <input [(ngModel)]="componenta.pret">
+    </div>
+    
+    <div class="butoane">
+        <button (click)="goBack()">Inapoi</button>
+        <button (click)="updateComponenta()">Actualizeaza</button>
+        <button (click)="stergeComponenta()">Sterge</button>
+    </div>
+</div>

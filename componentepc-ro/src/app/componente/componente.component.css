@@ -1,0 +1,102 @@
+.componente{
+  margin: 0 0 1em 0;
+  list-style-type: none;
+  padding: 0;
+  /* width: fit-content; */
+}
+
+.componente li {
+  position: relative;
+  cursor: pointer;
+  /* background-color: rgb(119, 108, 108); */
+  margin: 1em;
+  padding: .3em 0;
+  height: 1.6em;
+  width: fit-content;
+  border-radius: 4px;
+}
+ 
+.componente li:hover {
+  color: #1c2c35;
+  left: .4em;
+}
+ 
+.componente a {
+  color: rgb(20, 16, 16);
+  text-decoration: none;
+  position: relative;
+  display: inline;
+  width: 150px;
+}
+ 
+.componente a:hover {
+  color:#263136;
+}
+ 
+.componente .ecuson {
+  display: inline-block;
+  font-size: small;
+  color: rgb(255, 255, 255);
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.7em;
+  min-width: 16px;
+  text-align: center;
+  margin-right: .7em;
+  border-radius: 4px;
+}
+
+.componente .nume {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #608b7b;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.7em;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.componente .pret {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #946759;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.7em;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+
+button a {
+  color: #1c2c35;
+  text-decoration: none;
+}
+
+   
