@@ -1,0 +1,22 @@
+<h2>Lista componentelor</h2>
+<div>
+    <ul class="componente">
+        <div>
+            <li *ngFor="let componenta of componente">
+
+                <a routerLink="/detalii/{{componenta.id}}">
+                    <span class="ecuson">{{componenta.id}}</span> 
+                    <span class="nume"> {{componenta.nume}} </span>
+                    <span class="pret">Pret: {{componenta.pret}} &euro;</span>
+                </a>
+
+            </li>
+        </div>
+    </ul>      
+</div>
+
+<button>
+    <a routerLink="/adaugaComponenta">
+    Adauga
+    </a>
+</button>

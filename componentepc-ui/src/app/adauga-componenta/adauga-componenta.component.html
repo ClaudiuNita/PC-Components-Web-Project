@@ -1,0 +1,33 @@
+<h2>Adauga componenta</h2>
+<div>
+    <form (ngSubmit)="adaugaComponenta()" #adaugaComponentaForm="ngForm">
+        <div>
+            <label>Nume:
+                <input type="text" required [(ngModel)]="componenta.nume" id="nume" name="nume" #nume="ngModel">
+            </label>
+            <div [hidden]="nume.valid || nume.pristine" class="alert">
+                Numele este obligatoriu!
+            </div>
+        </div>
+        <div>
+            <label>Producator:
+                <input type="text" pattern="[a-zA-Z]*" required [(ngModel)]="componenta.producator" id="producator" name="producator" #producator="ngModel">
+            </label>
+            <div [hidden]="producator.valid || producator.pristine" class="alert">
+                Producatorul este obligatoriu!
+            </div>
+        </div>
+        <div>
+            <label>Pret:
+                <input type="text" pattern="[0-9]*" required [(ngModel)]="componenta.pret" id="pret" name="pret" #pret="ngModel">
+            </label>
+            <div [hidden]="pret.valid || pret.pristine" class="alert">
+                Pretul este obligatoriu!
+            </div>
+        </div>
+        <button type="submit" [disabled]="!adaugaComponentaForm.form.valid">Adauga</button>
+        
+    </form>
+</div>
+<button (click)="goBack()">Inapoi</button>
+

@@ -1,0 +1,21 @@
+In-progress:
+-logare si acces in functie de rol
+-Pe adaugare:
+	-validare pe input (fara litere la pret)	bifat
+	-sa fie unic in baza de date
+
+
+Do:
+-cautare produse
+-poze cu componente
+-categorii cu componente
+-cos de cumparaturi
+
+
+Done:
+-adauga produse						bifat
+-sterge produse						bifat
+-actualizeaza produse					bifat
+-reduceri produse					bifat
+-butoane editate					bifat
+-activeLink 						bifat

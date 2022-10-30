@@ -1,0 +1,35 @@
+<div *ngIf="componenta">
+    
+    <h2> Detalii componenta [{{componenta.nume}}]: </h2>
+
+    <form #detaliiComponentaForm="ngForm">
+        <div>
+            <label>Id produs:</label> {{componenta.id}}
+            <div>
+                <label for="componenta-nume">Denumire:</label>
+                <input required id="componenta-nume" [(ngModel)]="componenta.nume" placeholder="nume" id="nume" name="nume" #nume="ngModel">
+                <div [hidden]="nume.valid" class="alert">
+                    Numele este obligatoriu!
+                </div>
+            </div>
+            
+            <label> Producator:</label>
+            <input required [(ngModel)]="componenta.producator" placeholder="producator" id="producator" name="producator" #producator="ngModel">
+            <div [hidden]="producator.valid" class="alert">
+               Producatorul este obligatoriu!
+            </div>
+            <br>
+            <label>Pret Euro:</label>
+            <input pattern="[0-9]*" required [(ngModel)]="componenta.pret" id="pret" name="pret" #pret="ngModel">
+            <div [hidden]="pret.valid" class="alert">
+                Pretul este obligatoriu!
+            </div>
+        </div>
+    </form>
+    
+    <div class="butoane">
+        <button (click)="goBack()">Inapoi</button>
+        <button (click)="updateComponenta()" [disabled]="!detaliiComponentaForm.form.valid">Actualizeaza</button>
+        <button (click)="stergeComponenta()">Sterge</button>
+    </div>
+</div>
