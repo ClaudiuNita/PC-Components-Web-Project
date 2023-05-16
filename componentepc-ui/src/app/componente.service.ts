@@ -12,11 +12,12 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ComponenteService {
-  private getComponenteURL: string = '/componente_backend/getComponente';
-  private getComponentaURL: string = '/componente_backend/getComponenta';
-  private putComponentaURL: string = '/componente_backend/putComponenta';
-  private deleteComponentaURL: string = '/componente_backend/deleteComponenta';
-  private adaugaComponentaURL: string ='/componente_backend/postComponenta';
+  private baseURL = '/componente-backend';
+  private getComponenteURL: string = `${this.baseURL}/componente`;
+  private getComponentaURL: string = `${this.baseURL}/componenta`;
+  private putComponentaURL: string = `${this.baseURL}/update`;
+  private deleteComponentaURL: string = `${this.baseURL}/delete`;
+  private adaugaComponentaURL: string =`${this.baseURL}/add`;
 
   constructor(private http: HttpClient) { }
 

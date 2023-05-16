@@ -1,6 +1,6 @@
 {
-    "/componente_backend/*": {
-        "target": "http://localhost:8080",
+    "/componente-backend/*": {
+        "target": "http://localhost:9090",
         "secure": false,
         "changeOrigin": true
     }

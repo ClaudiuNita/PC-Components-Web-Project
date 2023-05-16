@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
-@RequestMapping(value="/componente_backend")
+@RequestMapping(value="/componente-backend")
 @CrossOrigin(origins = "http://localhost:4200")
 public class ComponenteRestController {
     
@@ -32,27 +32,27 @@ public class ComponenteRestController {
         this.componenteRepository = componenteRepository;
     }
 
-    @GetMapping(value = "/getComponente")
+    @GetMapping(value = "/componente")
     public List<Componente> getAll(){
         return componenteRepository.findAll();
     }
 
-    @GetMapping(value = "/getComponenta/{id}")
+    @GetMapping(value = "/componenta/{id}")
     public Optional<Componente> getById(@PathVariable("id") Integer id){
         return componenteRepository.findById(id);
     }
 
-    @PutMapping(value="/putComponenta")
+    @PutMapping(value="/update")
     public Componente actualizeazaComponente(@RequestBody Componente componenta){
         return componenteRepository.save(componenta);
     }
 
-    @PostMapping(value = "/postComponenta")
+    @PostMapping(value = "/add")
     public Componente adaugaComponenta(@RequestBody Componente componenta){
         return componenteRepository.save(componenta);
     }
 
-    @DeleteMapping(value = "/deleteComponenta/{id}")
+    @DeleteMapping(value = "/delete/{id}")
     public void stergeComponenta(@PathVariable("id") Integer id){
         componenteRepository.deleteById(id);
     }
