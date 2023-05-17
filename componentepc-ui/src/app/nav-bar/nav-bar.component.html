@@ -1,0 +1,8 @@
+<div style="text-align: right;" >
+    <nav>
+        <a routerLink = "/acasa" routerLinkActive="active-link">Acasa</a>
+        <a routerLink = "/componente" routerLinkActive="active-link">Componente PC</a>
+        <a routerLink = "/login" routerLinkActive="active-link">Login</a>
+        <a routerLink = "/logout" *ngIf="userLoginStatus" (click) = handleLogout()>Logout</a>
+    </nav>
+</div>
