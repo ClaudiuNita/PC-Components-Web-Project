@@ -1,12 +1,16 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AcasaComponent } from './acasa/acasa.component';
 import { AdaugaComponentaComponent } from './adauga-componenta/adauga-componenta.component';
 import { ComponenteDetaliiComponent } from './componente-detalii/componente-detalii.component';
 import { ComponenteComponent } from './componente/componente.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   {path: '', component: AcasaComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'logout', component: LogoutComponent},
   {path: 'acasa', component: AcasaComponent},
   {path: 'componente', component: ComponenteComponent},
   {path: 'detalii/:id', component: ComponenteDetaliiComponent},

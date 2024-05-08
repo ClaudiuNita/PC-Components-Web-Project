@@ -8,18 +8,12 @@ import { AuthenticationService } from '../login/auth.service';
 })
 export class NavBarComponent implements OnInit {
 
-  userLoginStatus: boolean;
+  isLoggedIn = false;
 
   constructor(private authenticationService: AuthenticationService) {
   }
 
   ngOnInit() {
-    this.userLoginStatus = this.authenticationService.isUserLoggedIn();
-    console.log('The status from app ' + this.userLoginStatus);
-  }
-
-  handleLogout() {
-    console.log("handleLogout called");
-    this.authenticationService.logout();
+    this.isLoggedIn = this.authenticationService.isUserLoggedIn();
   }
 }

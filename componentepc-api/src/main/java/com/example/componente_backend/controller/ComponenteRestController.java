@@ -1,14 +1,7 @@
 package com.example.componente_backend.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.example.componente_backend.repository.ComponenteRepository;
-
 import java.util.List;
 import java.util.Optional;
-
-import com.example.componente_backend.model.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -19,6 +12,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.componente_backend.model.Componente;
+import com.example.componente_backend.repository.ComponenteRepository;
 
 @RestController
 @RequestMapping(value="/componente-backend")

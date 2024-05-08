@@ -1,4 +1,6 @@
+<app-nav-bar></app-nav-bar>
 <h2>Adauga componenta</h2>
+
 <div>
     <form (ngSubmit)="adaugaComponenta()" #adaugaComponentaForm="ngForm">
         <div>
@@ -9,6 +11,7 @@
                 Numele este obligatoriu!
             </div>
         </div>
+
         <div>
             <label>Producator:
                 <input type="text" pattern="[a-zA-Z]*" required [(ngModel)]="componenta.producator" id="producator" name="producator" #producator="ngModel">
@@ -17,6 +20,7 @@
                 Producatorul este obligatoriu!
             </div>
         </div>
+        
         <div>
             <label>Pret:
                 <input type="text" pattern="[0-9]*" required [(ngModel)]="componenta.pret" id="pret" name="pret" #pret="ngModel">
@@ -25,9 +29,9 @@
                 Pretul este obligatoriu!
             </div>
         </div>
-        <button type="submit" [disabled]="!adaugaComponentaForm.form.valid">Adauga</button>
         
+        <button type="submit" [disabled]="!adaugaComponentaForm.form.valid">Adauga</button>
     </form>
 </div>
-<button (click)="goBack()">Inapoi</button>
 
+<button (click)="goBack()">Inapoi</button>

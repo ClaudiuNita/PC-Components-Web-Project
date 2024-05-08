@@ -1,23 +1,21 @@
+<app-nav-bar></app-nav-bar>
 <div class="body">
     <h2>Top deals</h2>
     
     <div>
-            <a routerLink="/detalii/{{componenta.id}}" *ngFor = "let componenta of componente">
-                <div class="componente">
-                    <h3>{{componenta.nume}} </h3>
+        <a routerLink="/detalii/{{componenta.id}}" *ngFor = "let componenta of componente">
+            <div class="componente">
+                <h3>{{componenta.nume}} </h3>
 
-                    <ul>
-                        <li>Id produs: {{componenta.id}}</li>
-                        <li>Producator: {{componenta.producator}}</li>
-                    </ul>
+                <ul>
+                    <li>Id produs: {{componenta.id}}</li>
+                    <li>Producator: {{componenta.producator}}</li>
+                </ul>
 
-                    <div class="pret"> 
-                        <b><strike>{{componenta.pret + 90}} &euro;</strike> {{componenta.pret}} &euro; = {{componenta.pret * 4.95}} RON</b>
-                    </div>
+                <div class="pret"> 
+                    <b><strike>{{componenta.pret + 90}} &euro;</strike> {{componenta.pret}} &euro; = {{componenta.pret * 4.95}} RON</b>
                 </div>
-                
-                
-            </a>
+            </div>
+        </a>
     </div>
-
 </div>

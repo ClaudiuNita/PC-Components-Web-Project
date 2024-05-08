@@ -18,6 +18,7 @@ export class ComponenteService {
   private putComponentaURL: string = `${this.baseURL}/update`;
   private deleteComponentaURL: string = `${this.baseURL}/delete`;
   private adaugaComponentaURL: string =`${this.baseURL}/add`;
+  private logoutURL: string = 'http://localhost:9090/logout';
 
   constructor(private http: HttpClient) { }
 
@@ -41,5 +42,9 @@ export class ComponenteService {
 
   adaugaComponenta(componenta: Componente): Observable<Componente>{
     return this.http.post<Componente>(this.adaugaComponentaURL, componenta);
+  }
+
+  logout(): Observable<any> {
+    return this.http.get(this.logoutURL);
   }
 }
