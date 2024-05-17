@@ -3,17 +3,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AcasaComponent } from './acasa/acasa.component';
-import { AdaugaComponentaComponent } from './adauga-componenta/adauga-componenta.component';
+import { AcasaComponent } from './components/acasa/acasa.component';
+import { AdaugaComponentaComponent } from './components/adauga-componenta/adauga-componenta.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponenteDetaliiComponent } from './componente-detalii/componente-detalii.component';
-import { ComponenteComponent } from './componente/componente.component';
-import { LoginComponent } from './login/login.component';
+import { ComponenteDetaliiComponent } from './components/componente-detalii/componente-detalii.component';
+import { ComponenteComponent } from './components/componente/componente.component';
+import { LoginComponent } from './components/login/login.component';
 
-import { HttpInterceptorService } from './http-interceptor-service.service';
-import { LogoutComponent } from './logout/logout.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HttpInterceptorService } from './services/interceptor/http-interceptor-service.service';
+import { LogoutComponent } from './components/logout/logout.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [

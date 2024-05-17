@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Componente } from '../componente';
-import { ComponenteService } from '../componente.service';
+import { Componente } from '../../models/componente';
+import { ComponenteService } from '../../services/componente/componente.service';
 
 @Component({
   selector: 'app-acasa',

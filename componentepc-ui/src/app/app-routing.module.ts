@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AcasaComponent } from './acasa/acasa.component';
-import { AdaugaComponentaComponent } from './adauga-componenta/adauga-componenta.component';
-import { ComponenteDetaliiComponent } from './componente-detalii/componente-detalii.component';
-import { ComponenteComponent } from './componente/componente.component';
-import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
+import { AcasaComponent } from './components/acasa/acasa.component';
+import { AdaugaComponentaComponent } from './components/adauga-componenta/adauga-componenta.component';
+import { ComponenteDetaliiComponent } from './components/componente-detalii/componente-detalii.component';
+import { ComponenteComponent } from './components/componente/componente.component';
+import { LoginComponent } from './components/login/login.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 const routes: Routes = [
   {path: '', component: AcasaComponent},
